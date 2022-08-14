@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./Images/icone-driveneats.ico" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DrivenEats</title>
+  </head>
+
+  <body>
+    <div class="barra-topo">
+      <div>DrivenEats</div>
+      <div>Sua comida em 6 minutos</div>
+    </div>
+
+    <div class="corpo-pagina">
+      <div class="titulo-categoria">Primeiro, seu prato</div>
+      <div class="caixas">
+        <div class="prato frango" onclick="selecionar_caixa('.prato','.frango')">
+          <img src="./Images/frango_yin_yang.png" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Frango Yin Yang</div>
+            <div class="descricao">Um pouco de batata, um pouco de salada</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">14.90</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="prato sushi" onclick="selecionar_caixa('.prato','.sushi')">
+          <img src="./Images/combo sushi.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Combão de Sushi</div>
+            <div class="descricao">Bora aprender a usar Hashi hoje?!</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">55.90</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="prato hamburguer" onclick="selecionar_caixa('.prato','.hamburguer')">
+          <img src="./Images/hamburguer.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Hamburguer duplo</div>
+            <div class="descricao">Junto com aquela batata suculenta</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">36.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="prato pizza" onclick="selecionar_caixa('.prato','.pizza')">
+          <img src="./Images/pizza.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Pizza de 4 queijos</div>
+            <div class="descricao">Uma explosão de sabor e de queijo!</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">60.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="prato poke" onclick="selecionar_caixa('.prato','.poke')">
+          <img src="./Images/poke.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Poke de Salmão</div>
+            <div class="descricao">Com Cream Cheese, fica uma perfeição!</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">35.90</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="prato salada" onclick="selecionar_caixa('.prato','.salada')">
+          <img src="./Images/salada.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Salada fit</div>
+            <div class="descricao">Pra quem tá preocupado com as calorias diárias</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">25.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="titulo-categoria">Agora, sua bebida</div>
+      <div class="caixas">
+        <div class="bebida coca" onclick="selecionar_caixa('.bebida','.coca')">
+          <img src="./Images/coquinha_gelada.png" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Coquinha Gelada</div>
+            <div class="descricao">Lata 350ml</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">4.90</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="bebida pepsi" onclick="selecionar_caixa('.bebida','.pepsi')">
+          <img src="./Images/pepsi.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Pepsi Black</div>
+            <div class="descricao">Pra quem é alternativo</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">4.50</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="bebida heineken" onclick="selecionar_caixa('.bebida','.heineken')">
+          <img src="./Images/heineken.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Heineken</div>
+            <div class="descricao">Se beber, não dirija!</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">12.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="bebida agua" onclick="selecionar_caixa('.bebida','.agua')">
+          <img src="./Images/água.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Água Mineral</div>
+            <div class="descricao">Vamos se hidratar!</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">3.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="bebida cha" onclick="selecionar_caixa('.bebida','.cha')">
+          <img src="./Images/cha.jpeg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Chá Gelado</div>
+            <div class="descricao">Tem gosto pra tudo, né..</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">8.99</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="bebida h20" onclick="selecionar_caixa('.bebida','.h20')">
+          <img src="./Images/h20.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">H2Oh!</div>
+            <div class="descricao">Melhor que Sprite! :)</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">6.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="titulo-categoria">Por fim, sua sobremesa</div>
+      <div class="caixas">
+        <div class="sobremesa pudim" onclick="selecionar_caixa('.sobremesa','.pudim')">
+          <img src="./Images/pudim.png" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Pudim</div>
+            <div class="descricao">Apenas Pudim</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">7.90</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="sobremesa brownie" onclick="selecionar_caixa('.sobremesa','.brownie')">
+          <img src="./Images/brownie.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Brownie</div>
+            <div class="descricao">É isso, brownie</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">6.99</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="sobremesa bolo" onclick="selecionar_caixa('.sobremesa','.bolo')">
+          <img src="./Images/bolo de pote.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Bolo de Pote</div>
+            <div class="descricao">Chocolate, morango ou limão</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">9.00</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="sobremesa acai" onclick="selecionar_caixa('.sobremesa','.acai')">
+          <img src="./Images/acai.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Taça de Açai</div>
+            <div class="descricao">500 ml + 2 adicionais</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">13.50</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="sobremesa cookie" onclick="selecionar_caixa('.sobremesa','.cookie')">
+          <img src="./Images/cookies.jpg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Cookies</div>
+            <div class="descricao">2 unidades</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">5.50</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+
+        <div class="sobremesa milkshake" onclick="selecionar_caixa('.sobremesa','.milkshake')">
+          <img src="./Images/milkshake.jpeg" />
+          <div class="texto-caixa">
+            <div class="nome_produto">Milkshake</div>
+            <div class="descricao">500 ml</div>
+          </div>
+          <div class="fundo_produto">
+            <div>
+              <div>R$</div>
+              <div class="valor">12.99</div>
+            </div>
+            <div class="check">
+              &#10003;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="barra-bottom">
+      <button disabled onclick="confirmar()">
+        Selecione os 3 itens <br>para fechar o pedido
+      </button>
+    </div>
+
+    <div class="bloco-confirmar escondido">
+      <div>Confirme seu pedido</div>
+      <div>
+        <div class="prato-escolhido">
+          <div class="nome"></div>
+          <div class="valor"></div>
+        </div>
+
+        <div class="bebida-escolhida">
+          <div class="nome"></div>
+          <div class="valor"></div>
+        </div>
+
+        <div class="sobremesa-escolhida">
+          <div class="nome"></div>
+          <div class="valor"></div>
+        </div>
+
+        <div class="final">
+          <div>TOTAL</div>
+          <div class="total"></div>
+        </div>
+      </div>
+      
+      <button class="confirmacao" onclick="enviar_pedido()">Tudo certo, pode pedir!</button>
+      <button class="cancelamento" onclick="desconfirmar()">Cancelar</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
